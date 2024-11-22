@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Dog Adoption</title>
+    <form action="/server"></form>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            padding:0px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .header {
+            background-color: darkcyan;
+            color: #fff;
+            padding: 30px ;
+            text-align: center;
+            font-size: larger;
+        }
+        .quotes{
+            color:#333;
+            font-size:x-large;
+            font-style:italic;;
+        }
+        .heading h1 {
+            margin: 0;
+            font: 2.5em;
+        }
+        h1{
+            
+            color: black;
+            background-color: darkcyan;
+            text-decoration: underline;
+            border-width: 2px;
+            line-height: 90px;
+
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: #ffd165;
+            padding: 5px;
+        }
+        .navbar a {
+            color:black;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color:deeppink;
+        }
+        .main-content {
+            padding: 20px;
+        }
+        .hero {
+            background-image: url(https://th.bing.com/th/id/OIP.X_PJr43wILS52ai8AVGlqgHaIp?rs=1&pid=ImgDetMain);
+            background-size: cover;
+            background-position: center;
+            color: #61c2ff;
+            text-align: center;
+            padding: 50px 0;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            
+        }
+        .featured-pets {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px ;
+        }
+        .pet-card {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .pet-card img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .pet-card h3 {
+            margin-top: 0;
+            color:blue;
+        }
+        .adoption-process {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .adoption-process h2 {
+            color: #ff6f61;
+        }
+        .adoption-steps {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            
+        }
+        .step {
+            background-color:bisque;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .testimonials {
+            background-color:  #ff6f61;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .testimonials h2 {
+            margin-top: 0px;
+        }
+        .testimonial {
+            background-color:  #ff6f61;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+
+        }
+        .footer {
+            background-color: rgb(68, 71, 68);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        heading{
+            background-color: #ff6f61;
+        }
+        button{
+            background-color: #ff6f61;
+            font-size: larger;
+            color: #5c213d;
+        }
+        .adoption-process h2{
+            background-color: rgb(247, 30, 95);
+            color: #f8f8f8;
+            line-height: 60px;
+        }
+        .quotes{
+            background-color: #61c5ff;
+            color: #f8f8f8;
+        }
+        .pet-card{
+            background-color: #61c5ff;
+        }
+        .navbar{
+            border: solid;
+            border-radius: 10px;
+        }
+        .container{
+            background-color: lavender;
+        }
+        .h2{
+            line-height: 20px;
+        }
+        .footer{
+            line-height: 10px;
+        }
+        </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Pet Dog Adoption</h1>
+        <div class="quotes">
+            <marquee><i><b>"Change a life, adopt a pet"</i></b></marquee>
+        </div>
+    </div>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">Adopt</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </div>
+    <div class="hero">
+        <h2>Find Your New Best Friend</h2>
+        <p>Adopt a dog today and give them a forever home.</p>
+    </div>
+    <div class="main-content">
+        <div class="featured-pets">
+            <div class="pet-card">
+                <img src=https://th.bing.com/th/id/OIP.efdzmV_Ffuhonf4UuloyTwHaIw?pid=ImgDet&w=184&h=217&c=7&dpr=1.3 alt="Dog 1">
+                <h3>Buddy</h3>
+                <p>Breed: Pug</p>
+                <p>Age: 2 years</p>
+            </div>
+            <div class="pet-card">
+                <img src="https://iheartdogs.com/wp-content/uploads/2017/04/Maltese_puppy.jpeg.jpeg" width="200" height="500" alt="Dog 2">
+                <h3>Lucy</h3>
+                <p>Breed: Golden Retriever</p>
+                <p>Age: 3 years</p>
+            </div>
+            <div class="pet-card">
+                <img src="https://th.bing.com/th/id/OIP.M5f5YkRdp2HyM-KO7BkmwAHaIU?pid=ImgDet&w=474&h=532&rs=1" alt="Dog 3">
+                <h3>Max</h3>
+                <p>Breed: German Shepherd</p>
+                <p>Age: 4 years</p>
+            </div>
+        </div>
+        <div class="adoption-process">
+            <h2>Adoption Process</h2>
+            <div class="adoption-steps">
+                <div class="step">
+                    <h3>Step 1</h3>
+                    <p>Fill out the adoption application form.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 2</h3>
+                    <p>Meet the dog and ensure a good match.</p>
+                </div>
+                <div class="step">
+                    <h3>Step 3</h3>
+                    <p>Finalize the adoption and take your new friend home.</p>
+                </div>
+            </div><br>
+            <h1>ADOPTION FORM</h1><br>
+            <br>
+    <form action="#">
+        <div class="container">
+            <div class="fname">
+                <i class="fa fa-user"></i>
+                <label for="Firstname">Firstname:</label>
+                <input type="text" id="Firstname" minlength="6" maxlength="20" placeholder="Enter your name">
+                <span>
+                    <i class="fa fa-user"></i>
+                    <label for="lastname">Lastname:</label>
+                    <input type="text" id="lastname" minlength="8" maxlength="25">
+                </span>
+            <br>
+            <br>
+            </div>
+            <div class="email">
+                <i class="fa fa-envelope mail"></i>
+            <label for="Emailaddress">Email Address:</label>
+            <input type="email" id="EmailAddress" minlength="8" maxlength="30"><br>
+            <br>
+            <div class="phno">
+                <label for="Phone">Phone:</label>
+                <input type="phonno" id="phno " placeholder="">
+            </div><br>
+            <div class="stadress">
+                <label for="Street Address">Sreet Address:</label>
+                <input type="text"  id="StreetAddress" minlength="10" maxlength="50">
+            </div><br>
+            <div class="city">
+                <label for="city">City:</label>
+                <input type="text" id="city">
+                <span>
+                <label for="State">State:</label>
+                <input type="text" name="" id="">
+                <br>
+                <br>
+            </span>
+            <div class="category">
+                <label for="dogtype">dogtype:</label>
+                <label for="pug">pug</label>
+                <input type="radio" name="category">
+                <label for="golden-retriever">golden-retriever</label>
+                <input type="radio" name="category">
+                <label for="german shepherd">german shephard</label>
+                <input type="radio" name="category"><br><br>
+                <button>Submit</button><br>
+                <br>
+            </div>
+        </div>
+    </div>
+</form>
+        </div>
+        <div class="testimonials">
+            <h2>Happy Tails</h2>
+            <div class="testimonial">
+                <p>"Adopting from here was the best decision ever. Buddy has brought so much joy to our family!" - Sarah</p>
+            </div>
+            <div class="testimonial">
+                <p>"The process was so smooth, and the staff were incredibly helpful." - John</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy;Site is For-2024 Pet Dog Adoption. <br> <br>
+            Made By Rupal Mishra </p>
+    </div>
+</body>
+</html>
